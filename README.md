@@ -45,7 +45,7 @@ int main(void)
   // Turn on leftmost 4 LEDs
 		_delay_ms(500);
   // Wait for 500ms
-		Lab 1 excerise 1, 2 and 3 Suemon Kwok 14883335
+		Lab 1 excerise 1, 2 and 3 
 
   // Step 4: All LEDs go out
 			PORTC = 0b00000000;
