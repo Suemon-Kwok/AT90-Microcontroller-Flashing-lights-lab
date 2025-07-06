@@ -38,7 +38,7 @@ int main(void)
 		// Step 3: Leftmost 4 LEDs on, rightmost 4 LEDs off
 		PORTC = 0b11110000; // Turn on leftmost 4 LEDs
 		_delay_ms(500); // Wait for 500ms
-		Lab 1 excerise 1, 2 and 3 Suemon Kwok 14883335
+		
 			// Step 4: All LEDs go out
 			PORTC = 0b00000000; // Turn all LEDs off
 		_delay_ms(200); // Wait for 200ms
