@@ -33,21 +33,36 @@ int main(void)
 	DDRC = 0b11111111; // Set all PORTC pins as output
 	while (1)
 	{
-		// Step 1: All LEDs go on
-		PORTC = 0b11111111; // Turn all LEDs on
-		_delay_ms(500); // Wait for 500ms
-		// Step 3: Leftmost 4 LEDs on, rightmost 4 LEDs off
-		PORTC = 0b11110000; // Turn on leftmost 4 LEDs
-		_delay_ms(500); // Wait for 500ms
+
+  // Step 1: All LEDs go on
+		PORTC = 0b11111111;
+  // Turn all LEDs on
+		_delay_ms(500);
+  // Wait for 500ms
+
+  // Step 3: Leftmost 4 LEDs on, rightmost 4 LEDs off
+		PORTC = 0b11110000;
+  // Turn on leftmost 4 LEDs
+		_delay_ms(500);
+  // Wait for 500ms
 		Lab 1 excerise 1, 2 and 3 Suemon Kwok 14883335
-			// Step 4: All LEDs go out
-			PORTC = 0b00000000; // Turn all LEDs off
-		_delay_ms(200); // Wait for 200ms
-		// Step 5: Rightmost 4 LEDs on
-		PORTC = 0b11111111; // Turn on rightmost 4 LEDs
-		_delay_ms(500); // Wait for 500ms
-		// Step 6: All LEDs go out
-		PORTC = 0b00000000; // Turn all LEDs off
-		_delay_ms(200); // Wait for 200ms
+
+  // Step 4: All LEDs go out
+			PORTC = 0b00000000;
+  // Turn all LEDs off
+		_delay_ms(200);
+  // Wait for 200ms
+
+  // Step 5: Rightmost 4 LEDs on
+		PORTC = 0b11111111;
+  // Turn on rightmost 4 LEDs
+		_delay_ms(500);
+  // Wait for 500ms
+
+  // Step 6: All LEDs go out
+		PORTC = 0b00000000;
+  // Turn all LEDs off
+		_delay_ms(200);
+  // Wait for 200ms
 	}
 }
